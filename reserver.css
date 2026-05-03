@@ -1,0 +1,131 @@
+/* ----- Général ----- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- Header ----- */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 20px 40px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0077ff;
+}
+
+.nav-menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+    color: #0077ff;
+}
+
+/* ----- Formulaire réservation ----- */
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-reservation {
+    max-width: 500px;
+    margin: auto;
+    background-color: #2c2c2c;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.form-reservation input,
+.form-reservation select,
+.form-reservation button {
+    width: 100%;
+    margin: 12px 0;
+    padding: 12px;
+    border: 1px solid #444;
+    background-color: #1b1b1b;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form-reservation input:focus,
+.form-reservation select:focus {
+    outline: none;
+    border-color: #0077ff;
+    background-color: #252525;
+}
+
+.form-reservation button {
+    background-color: #0077ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-reservation button:hover {
+    background-color: #005fcc;
+}
+
+/* ----- Message de confirmation ----- */
+.confirmation {
+    text-align: center;
+    background-color: #2c2c2c;
+    color: #7CFC00;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 500px;
+    border: 1px solid #7CFC00;
+    border-radius: 8px;
+}
+/* ----- Messages d'erreur et succès ----- */
+.error-message {
+    color: #d9534f;
+    background-color: #fdf7f7;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ebccd1;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.error-message p {
+    margin: 5px 0;
+}
+
+.success-message {
+    color: #3c763d;
+    background-color: #dff0d8;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #d6e9c6;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.success-message p {
+    margin: 5px 0;
+}
